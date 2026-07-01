@@ -61,7 +61,7 @@ index=dns_logs
 ```
 ### Purpose
 Identify the domains that generated the highest number of DNS requests.
-[![image](screenshots/02.png)](screenshots/02.png)
+[![image](screenshots/2.png)](screenshots/2.png)
 ---
 
 # ✅ Task 3 — Top Source Clients
@@ -74,7 +74,7 @@ index=dns_logs
 ```
 ### Purpose
 Identify the client IP addresses generating the highest DNS traffic.
-[![image](screenshots/03.png)](screenshots/03.png)
+[![image](screenshots/3.png)](screenshots/3.png)
 ---
 
 # ✅ Task 4 — Top DNS Servers
