@@ -22,8 +22,7 @@ In this lab, you will:
 
 📥 **Dataset**
 
-https://raw.githubusercontent.com/0xrajneesh/30-Days-SOC-Challenge-Beginner/refs/heads/main/dns_logs.json
-
+https://github.com/gyanesh-chand/splunk-dns-log-analysis/blob/main/dns_logs.json
 ---
 
 # ⚙️ Data Ingestion
