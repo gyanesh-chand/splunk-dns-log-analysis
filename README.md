@@ -71,7 +71,6 @@ Identify the domains that generated the highest number of DNS requests.
 index=dns_logs
 | stats count by "id.orig_h"
 | sort -count
-| head 10
 ```
 ### Purpose
 Identify the client IP addresses generating the highest DNS traffic.
