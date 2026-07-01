@@ -15,14 +15,12 @@ In this lab, you will:
 
 # 🖥️ Lab Setup
 
-- ✅ Splunk Enterprise
+- ✅ Splunk
 - ✅ JSON-formatted Zeek DNS Logs
-- ✅ Windows 11
-- ✅ Search & Reporting App
+- ✅ 🌐 Log File: Download the file below and place it in a directory accessible to Splunk for ingestion.
 
-📥 **Dataset**
+📥 **[Download sample dns file](https://github.com/gyanesh-chand/splunk-dns-log-analysis/blob/main/dns_logs.json)**
 
-https://github.com/gyanesh-chand/splunk-dns-log-analysis/blob/main/dns_logs.json
 ---
 
 # ⚙️ Data Ingestion
