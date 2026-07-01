@@ -48,6 +48,7 @@ index=dns_logs
 ```
 ### Purpose
 Determine the total number of DNS events ingested into Splunk.
+
 [![image](screenshots/01.png)](screenshots/01.png)
 ---
 
@@ -61,6 +62,7 @@ index=dns_logs
 ```
 ### Purpose
 Identify the domains that generated the highest number of DNS requests.
+
 [![image](screenshots/2.png)](screenshots/2.png)
 ---
 
@@ -74,158 +76,90 @@ index=dns_logs
 ```
 ### Purpose
 Identify the client IP addresses generating the highest DNS traffic.
+
 [![image](screenshots/3.png)](screenshots/3.png)
 ---
 
 # ✅ Task 4 — Top DNS Servers
-
 ### SPL Query
-
 ```spl
 index=dns_logs
 | stats count by "id.resp_h"
 | sort -count
 ```
-
 ### Purpose
-
 Identify the DNS servers handling client requests.
 
-### Screenshot
-
-<p align="center">
-  <a href="screenshots/06_top_dns_servers.png">
-    <img src="screenshots/06_top_dns_servers.png" width="900">
-  </a>
-</p>
-
+[![image](screenshots/4.png)](screenshots/4.png)
 ---
 
 # ✅ Task 5 — DNS Query Type Distribution
-
 ### SPL Query
-
 ```spl
 index=dns_logs
 | stats count by qtype
 ```
-
 ### Purpose
-
 Analyze the distribution of DNS query types such as A, AAAA, PTR and CNAME.
 
-### Screenshot
-
-<p align="center">
-  <a href="screenshots/07_dns_query_types.png">
-    <img src="screenshots/07_dns_query_types.png" width="900">
-  </a>
-</p>
-
+[![image](screenshots/5.png)](screenshots/5.png)
 ---
 
 # ✅ Task 6 — DNS Response Codes
-
 ### SPL Query
-
 ```spl
 index=dns_logs
 | stats count by rcode
 ```
-
 ### Purpose
-
 Analyze DNS response codes to determine successful and failed lookups.
 
-### Screenshot
-
-<p align="center">
-  <a href="screenshots/08_dns_response_codes.png">
-    <img src="screenshots/08_dns_response_codes.png" width="900">
-  </a>
-</p>
-
+[![image](screenshots/6.png)](screenshots/6.png)
 ---
 
 # ✅ Task 7 — Most Returned IP Addresses
-
 ### SPL Query
-
 ```spl
 index=dns_logs
 | stats count by answers
 | sort -count
 | head 10
 ```
-
 ### Purpose
-
 Identify the IP addresses most frequently returned in DNS responses.
 
-### Screenshot
-
-<p align="center">
-  <a href="screenshots/09_returned_ip_addresses.png">
-    <img src="screenshots/09_returned_ip_addresses.png" width="900">
-  </a>
-</p>
-
+[![image](screenshots/9.png)](screenshots/9.png)
 ---
 
 # ✅ Task 8 — Protocol Distribution (UDP vs TCP)
-
 ### SPL Query
-
 ```spl
 index=dns_logs
 | stats count by proto
 ```
-
 ### Purpose
-
 Determine which transport protocol was used for DNS communication.
 
-### Screenshot
-
-<p align="center">
-  <a href="screenshots/10_protocol_distribution.png">
-    <img src="screenshots/10_protocol_distribution.png" width="900">
-  </a>
-</p>
-
+[![image](screenshots/10.png)](screenshots/10.png)
 ---
 
 # ✅ Task 9 — DNS Activity Over Time
-
 ### SPL Query
-
 ```spl
 index=dns_logs
 | timechart span=1h count
 ```
-
 ### Purpose
-
 Visualize DNS traffic trends over time.
 
-### Screenshot
-
-<p align="center">
-  <a href="screenshots/11_dns_activity_over_time.png">
-    <img src="screenshots/11_dns_activity_over_time.png" width="900">
-  </a>
-</p>
-
+[![image](screenshots/15.png)](screenshots/15.png)
 ---
 
 # 📊 Final Dashboard
 
-<p align="center">
-  <a href="screenshots/12_dashboard_overview.png">
-    <img src="screenshots/12_dashboard_overview.png" width="900">
-  </a>
-</p>
-
+[![image](screenshots/dashboard_part1.png)](screenshots/dashboard_part1.png)
+[![image](screenshots/dashboard_part2.png)](screenshots/dashboard_part2.png)
+[![image](screenshots/dashboard_part3.png)](screenshots/dashboard_part3.png)
 ---
 
 # 🛠️ Skills Demonstrated
