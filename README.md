@@ -121,12 +121,11 @@ Analyze DNS response codes to determine successful and failed lookups.
 index=dns_logs
 | stats count by answers
 | sort -count
-| head 10
 ```
 ### Purpose
 Identify the IP addresses most frequently returned in DNS responses.
 
-[![image](screenshots/9.png)](screenshots/9.png)
+[![image](screenshots/10.png)](screenshots/10.png)
 ---
 
 # ✅ Task 8 — Protocol Distribution (UDP vs TCP)
@@ -138,7 +137,7 @@ index=dns_logs
 ### Purpose
 Determine which transport protocol was used for DNS communication.
 
-[![image](screenshots/10.png)](screenshots/10.png)
+[![image](screenshots/9.png)](screenshots/9.png)
 ---
 
 # ✅ Task 9 — DNS Activity Over Time
