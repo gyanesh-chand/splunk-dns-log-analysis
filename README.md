@@ -137,7 +137,7 @@ index=dns_logs
 ### Purpose
 Determine which transport protocol was used for DNS communication.
 
-[![image](screenshots/9.png)](screenshots/9.png)
+[![image](screenshots/15.png)](screenshots/15.png)
 ---
 
 # ✅ Task 9 — DNS Activity Over Time
@@ -149,7 +149,7 @@ index=dns_logs
 ### Purpose
 Visualize DNS traffic trends over time.
 
-[![image](screenshots/15.png)](screenshots/15.png)
+[![image](screenshots/9.png)](screenshots/9.png)
 ---
 
 # 📊 Final Dashboard
