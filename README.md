@@ -27,10 +27,11 @@ In this lab, you will:
 
 1. Open **Splunk Enterprise**
 2. Navigate to **Settings → Add Data**
-3. Select **Upload**
-4. Upload `dns_logs.json`
-5. Source Type: `_json`
-6. Create an index named **dns_logs**
-7. Finish the upload and verify successful indexing.
+3. [![Open Add Data](screenshots/Add_data.png)](screenshots/Add_data.png)
+4. Select **Upload**
+5. Upload `dns_logs.json`
+6. Source Type: `_json`
+7. Create an index named **dns_logs**
+8. Finish the upload and verify successful indexing.
 
 ---
