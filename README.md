@@ -58,7 +58,6 @@ Determine the total number of DNS events ingested into Splunk.
 index=dns_logs
 | stats count by query
 | sort -count
-| head 10
 ```
 ### Purpose
 Identify the domains that generated the highest number of DNS requests.
