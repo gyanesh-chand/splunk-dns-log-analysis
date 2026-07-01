@@ -38,8 +38,6 @@ In this lab, you will:
 
 # 🔍 Investigation Tasks
 
----
-
 # ✅ Task 1 — Total DNS Events
 ### SPL Query
 ```spl
@@ -49,11 +47,6 @@ index=dns_logs
 ### Purpose
 Determine the total number of DNS events ingested into Splunk.
 ### Screenshot
-<p align="center">
-  <a href="screenshots/03_total_dns_events.png">
-    <img src="screenshots/01.png" width="900">
-  </a>
-</p>
-
+[![image](screenshots/01.png)]
 ---
 
