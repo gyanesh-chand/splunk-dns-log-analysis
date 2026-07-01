@@ -35,3 +35,31 @@ In this lab, you will:
 7. Finish the upload and verify successful indexing.
 [![Upload Completed](screenshots/Upload_Completed.png)](screenshots/Upload_Completed.png)
 ---
+
+# 🔍 Investigation Tasks
+
+---
+
+# ✅ Task 1 — Total DNS Events
+
+### SPL Query
+
+```spl
+index=dns_logs
+| stats count AS "Total DNS Events"
+```
+
+### Purpose
+
+Determine the total number of DNS events ingested into Splunk.
+
+### Screenshot
+
+<p align="center">
+  <a href="screenshots/03_total_dns_events.png">
+    <img src="screenshots/03_total_dns_events.png" width="900">
+  </a>
+</p>
+
+---
+
